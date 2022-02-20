@@ -26,18 +26,13 @@
   }
   
   .content-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font (700, 18px, 2, 0.06em);
     color: var(--primary-text-color);
     margin-bottom: 4px;
   }
   
   .content-text {
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.03em;
+    @include font (null, 16px, 1.9);
     color: var(--title-text-color);
   }
   
@@ -69,8 +64,6 @@
   .overlay-text{
     position: absolute;
     padding: 30px;
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
+    @include font (null, 18px, 1.55);
     color: var(--primary-white-color);
   }

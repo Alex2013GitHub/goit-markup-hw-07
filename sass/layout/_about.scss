@@ -1,5 +1,7 @@
-
-.icon-about {
+.about__list {
+  display: flex;
+}
+  .about__icon {
     background-color: var(--button-color);
     height: 120px;
     border-radius: 4px;
@@ -9,33 +11,23 @@
     margin-bottom: 30px;
   }
   
-  
-  
-  .about-list {
-    display: flex;
-  }
-  .about-item {
+  .about__item {
     width: 270px;
   }
   
-  .about-item + .about-item {
+  .about__item + .about__item {
     margin-left: 30px;
   }
   
-  .about-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+  .about__title {
+    @include font ();
     text-transform: uppercase;
     color: var(--primary-text-color);
     margin-bottom: 10px;
   }
   
-  .about-text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+  .about__text {
+    @include font ($fw:null, $lh:1.71);
     color: var(--title-text-color);
   }
   
@@ -43,21 +35,18 @@
     padding-top: 0;
   }
   
-  .works-list {
+  .works {
     display: flex;
   }
-  .works-item + .works-item {
+  .works__item + .works__item {
     margin-left: 30px;
   }
-  .works-item{
+  .works__item{
     position: relative;
   }
-  .work-text {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
+  .work__text {
+    @include font ();
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     display: flex;
     align-items: center;
