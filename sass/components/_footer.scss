@@ -11,14 +11,7 @@
     margin-bottom: 20px;
   }
   
-  .icon-footer {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-  }
-  
+ 
   .container-footer {
     display: flex;
     align-items: baseline;
@@ -26,10 +19,50 @@
   }
   .footer-contact{
     flex-grow: 1;
+
+    &__text {
+      color: var(--primary-white-color);
+      margin-bottom: 9px;
+    }
+    
+    &__link {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    &__item {
+      margin-bottom: 9px;
+    }
   }
   .footer-social {
     margin-left: 70px;
+
+    &__input{
+       width: 358px;
+       height: 50px;
+       background-color: transparent;
+       border: none;
+       border: 1px solid var(--border-input-footer);
+       border-radius: 4px;
+       padding: 15px 16px;
+       color: var(--primary-white-color);
+       outline: none;
+       transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__input:focus{
+       border-color: var(--accent-color);
+    }
+    &__icon{
+      fill: var(--primary-white-color);
+      margin-left: 10px;
+      align-items: center;
+    }
+    
   }
+   
+  .footer-social__input::placeholder{
+    @include font (null, 16px, 1.25);
+    color: var(--placeholder-footer);
+ }
   
   .logo-footer {
     @include font ($fz:26px, $lh:1.19);
@@ -44,43 +77,4 @@
   address {
     @include font ($fw:null, $lh:1.71);
     font-style: normal;
-  }
-  .footer-contact__text {
-    color: var(--primary-white-color);
-    margin-bottom: 9px;
-  }
-  
-  .footer-contact__link {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .footer-contact__item {
-    margin-bottom: 9px;
-  }
-  
-  .footer-social__input{
-    width: 358px;
-    height: 50px;
-    background-color: transparent;
-    border: none;
-    border: 1px solid var(--border-input-footer);
-    border-radius: 4px;
-    padding: 15px 16px;
-    color: var(--primary-white-color);
-    outline: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .footer-social__input::placeholder{
-    @include font (null, 16px, 1.25);
-    color: var(--placeholder-footer);
-  }
-  .footer-social__input:focus{
-    border-color: var(--accent-color);
-  }
-  
-  
-  .footer-social__icon{
-    fill: var(--primary-white-color);
-    margin-left: 10px;
-    align-items: center;
   }

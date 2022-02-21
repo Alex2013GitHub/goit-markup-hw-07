@@ -1,7 +1,7 @@
-.about__list {
+.about {
   display: flex;
-}
-  .about__icon {
+
+  &__icon {
     background-color: var(--button-color);
     height: 120px;
     border-radius: 4px;
@@ -11,25 +11,28 @@
     margin-bottom: 30px;
   }
   
-  .about__item {
+  &__item {
     width: 270px;
   }
   
-  .about__item + .about__item {
+  &__item + &__item {
     margin-left: 30px;
   }
   
-  .about__title {
-    @include font ();
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-    margin-bottom: 10px;
-  }
-  
-  .about__text {
-    @include font ($fw:null, $lh:1.71);
-    color: var(--title-text-color);
-  }
+
+}
+
+.about__title {
+  @include font ();
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+
+.about__text {
+  @include font ($fw:null, $lh:1.71);
+  color: var(--title-text-color);
+}
   
   .section-works {
     padding-top: 0;
@@ -37,14 +40,15 @@
   
   .works {
     display: flex;
+
+    &__item + &__item {
+      margin-left: 30px;
+    }
+    &__item{
+      position: relative;
+    }
   }
-  .works__item + .works__item {
-    margin-left: 30px;
-  }
-  .works__item{
-    position: relative;
-  }
-  .work__text {
+  .works__text {
     @include font ();
     text-align: center;
     text-transform: uppercase;
@@ -58,3 +62,4 @@
     background-color: var(--background-color-work);
     color: var(--primary-white-color);
   }
+ 

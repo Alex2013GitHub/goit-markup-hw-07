@@ -1,5 +1,30 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  &__text:hover,
+  &__text:focus {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--shadow-button);
+  }
+&__btn-send:hover {
+    background-color: var(--butoon-hover);
+  }
+  &__item + &__item {
+    margin-left: 8px;
+  }
+  &__item + &__item {
+    margin-left: 8px;
+  }
+}
 
-  .hero__btn, .btn{
+
+.hero__btn, .btn{
     @include font ( 700, 16px, 1.88, 0.06em);
     text-align: center;
     color: var(--primary-white-color);
@@ -21,18 +46,8 @@
   .modal__btn-send:hover {
     background-color: var(--butoon-hover);
   }
-  .button-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-  }
   
-  .item-btn + .item-btn {
-    margin-left: 8px;
-  }
-  
-  .btn-text {
+  .button__text {
     @include font (500, 16px, 1.6, );
     text-align: center;
     color: var(--primary-text-color);
@@ -41,16 +56,7 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .btn-text:hover,
-  .btn-text:focus {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),;
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    box-shadow: var(--shadow-button);
-    
-  }
+
   .footer-social__btn {
     display: inline-flex;
     align-items: center;
