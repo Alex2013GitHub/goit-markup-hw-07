@@ -6,7 +6,7 @@
     padding-bottom: 25px;
   }
   
-  .logo-web {
+  .logo__web {
     font-family: Raleway;
     @include font ($fz:26px, $lh:1.2,);
     color: var(--accent-color);

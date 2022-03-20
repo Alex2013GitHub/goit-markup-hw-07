@@ -1,7 +1,7 @@
-.section-team {
+.section__other-background {
   background-color: var(--button-color);
 }
-  .team-socials {
+  .socials {
     display: flex;
     justify-content: center;
     &__list + &__list {
@@ -15,11 +15,11 @@
     }
   }
   
-  .team-socials__list {
+  .socials__list {
     width: 44px;
     height: 44px;
   }
-  .team-socials__link {
+  .socials__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,14 +36,14 @@
     fill: var(--primary-white-color);
   }
   
-  .team__list {
+  .team__item {
     box-shadow: var(--box-shadow-team);
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px
   }
   
   .team {
     display: flex;
-    &__list + &__list {
+    &__item + &__item {
       margin-left: 30px;
     }
   }

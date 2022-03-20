@@ -45,7 +45,7 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .site-nav__link.current::after {
+  .site-nav__link.site-nav-link__current::after {
     content: '';
     left: 0;
     bottom: -31px;

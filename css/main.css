@@ -106,7 +106,7 @@ body {
   padding-bottom: 25px;
 }
 
-.logo-web {
+.logo__web {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -499,7 +499,7 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link.current::after {
+.site-nav__link.site-nav-link__current::after {
   content: '';
   left: 0;
   bottom: -31px;
@@ -554,7 +554,7 @@ address {
   margin-bottom: 30px;
 }
 
-.about__icon {
+.about__box {
   background-color: var(--button-color);
   height: 120px;
   border-radius: 4px;
@@ -596,7 +596,7 @@ address {
   color: var(--title-text-color);
 }
 
-.section-works {
+.section__no-padding-top {
   padding-top: 0;
 }
 
@@ -631,16 +631,16 @@ address {
   color: var(--primary-white-color);
 }
 
-.team-socials {
+.socials {
   display: flex;
   justify-content: center;
 }
 
-.team-socials__list + .team-socials__list {
+.socials__list + .socials__list {
   margin-left: 10px;
 }
 
-.team-socials__link {
+.socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -651,7 +651,7 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-socials__list {
+.socials__list {
   width: 44px;
   height: 44px;
 }
@@ -660,14 +660,14 @@ address {
   fill: var(--primary-white-color);
 }
 
-.team-socials__link:hover,
-.team-socials__link:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team__list {
+.team__item {
   box-shadow: var(--box-shadow-team);
   border-radius: 0px 0px 4px 4px;
 }
@@ -676,7 +676,7 @@ address {
   display: flex;
 }
 
-.team__list + .team__list{
+.team__item + .team__item{
   margin-left: 30px;
 }
 
@@ -686,7 +686,7 @@ address {
   background-color: var(--primary-white-color);
 }
 
-.section-team {
+.section__other-background {
   background-color: var(--button-color);
 }
 
@@ -714,7 +714,7 @@ address {
   justify-content: center;
 }
 
-.clients__list {
+.clients__item {
   width: 170px;
   height: 92px;
 }
@@ -731,7 +731,7 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__list + .clients__list {
+.clients__item + .clients__item {
   margin-left: 30px;
 }
 

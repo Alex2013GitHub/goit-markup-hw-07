@@ -1,7 +1,7 @@
 .about {
   display: flex;
 
-  &__icon {
+  &__box {
     background-color: var(--button-color);
     height: 120px;
     border-radius: 4px;
@@ -34,7 +34,7 @@
   color: var(--title-text-color);
 }
   
-  .section-works {
+  .section__no-padding-top {
     padding-top: 0;
   }
   
