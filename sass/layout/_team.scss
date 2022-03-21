@@ -4,18 +4,19 @@
   .socials {
     display: flex;
     justify-content: center;
-    &__list + &__list {
-      margin-left: 10px;
-    }
-    &__link:hover,
-    &__link:focus {
-      background-color: var(--accent-color);
-      fill: var(--primary-white-color);
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+  }
+
+  .socials__item + .socials__item {
+    margin-left: 10px;
+  }
+  .socials__link:hover,
+  .socials__link:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .socials__list {
+  .socials__item {
     width: 44px;
     height: 44px;
   }
@@ -43,9 +44,10 @@
   
   .team {
     display: flex;
-    &__item + &__item {
-      margin-left: 30px;
-    }
+  }
+
+  .team__item + .team__item {
+    margin-left: 30px;
   }
 
   .team__item-contens {

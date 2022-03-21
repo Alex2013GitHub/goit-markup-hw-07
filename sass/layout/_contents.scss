@@ -3,8 +3,8 @@
     margin-left: -30px;
     flex-wrap: wrap;
     margin-bottom: -30px;
-    
-    &__item {
+  } 
+  .content__item {
     width: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
@@ -13,32 +13,32 @@
     border-right: 1px solid var(--border-color);
   } 
   
-  &__img{
+  .content__img{
     max-width: 100%;
     height: auto;
   }
-  &__list {
+  .content__description {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
   }
   
-  &__overlay {
+  .content__box {
     position: relative;
     overflow: hidden;
   }
   
-  &__link:focus,
-  &__link:hover,
-  &__link:hover &__overlay-item,
-  &__link:focus &__overlay-item {
+  .content__link:focus,
+  .content__link:hover,
+  .content__link:hover .content__wrap,
+  .content__link:focus .content__wrap {
     display: block;
     transform: translateY(0);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
   } 
   
-  &__overlay-item {
+  .content__wrap {
     position: absolute;
     top: 0;
     left: 0;
@@ -48,8 +48,6 @@
     transform: translateY(100%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
-  } 
-
   } 
 
   .content__overlay-text{
